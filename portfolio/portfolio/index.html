@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bandi Vijay Teja — Software Developer Portfolio</title>
+<meta name="description" content="Portfolio of Bandi Vijay Teja — BCA student skilled in Java, Python, SQL and React.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg-glow" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a href="#home" class="logo">VT<span>.</span></a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
+  <nav id="menu">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact" class="btn-sm">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-text">
+    <span class="chip"><b class="dot"></b> Open to entry-level software &amp; IT roles</span>
+    <h1>Hi, I'm <span class="grad">Bandi Vijay Teja</span></h1>
+    <p class="typed">I build <span id="typed"></span><span class="cursor">|</span></p>
+    <p class="lead">BCA student (2027) with a 9.09 CGPA and a working knowledge of Java, Python and SQL. I build web apps with REST APIs and LLM integration.</p>
+    <div class="cta">
+      <a class="btn primary" href="#projects">View Projects</a>
+      <a class="btn ghost" href="assets/Bandi_Vijay_Teja_Resume.pdf" download>Download Resume</a>
+      <a class="btn ghost" href="https://github.com/Vijaytejabandi" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/vijay-teja-bandi-741302433" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+    <ul class="stats">
+      <li><b>9.09</b><span>CGPA</span></li>
+      <li><b>2</b><span>Projects</span></li>
+      <li><b>7</b><span>Certifications</span></li>
+    </ul>
+  </div>
+  <div class="hero-card" aria-hidden="true">
+    <div class="code">
+      <div class="dots"><i></i><i></i><i></i></div>
+<pre><span class="k">class</span> <span class="t">Developer</span> {
+  name   = <span class="s">"Vijay Teja"</span>;
+  degree = <span class="s">"BCA 2027"</span>;
+  skills = [<span class="s">"Java"</span>,
+            <span class="s">"Python"</span>,
+            <span class="s">"SQL"</span>,
+            <span class="s">"React"</span>];
+  <span class="k">learning</span>() {
+    <span class="k">return</span> <span class="s">"always"</span>;
+  }
+}</pre>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="sec reveal">
+  <h2><small>01</small> About Me</h2>
+  <div class="about-grid">
+    <p>I'm a Bachelor of Computer Applications student from Tanuku, Andhra Pradesh, graduating in 2027. I enjoy turning ideas into working web applications, from clean responsive interfaces to REST API backends and AI-powered features.</p>
+    <p>Beyond coding, I coordinate the BCA Coding Club and have organised programming events like CODEQUEST and OMNISOLVE. I'm looking for an entry-level software or IT role where I can learn fast and ship real products.</p>
+  </div>
+  <div class="edu">
+    <article class="card">
+      <span class="tag">2024 – 2027</span>
+      <h3>Bachelor of Computer Applications</h3>
+      <p>B.V. Raju College, Bhimavaram</p>
+      <b class="hl">CGPA 9.09 / 10</b>
+    </article>
+    <article class="card">
+      <span class="tag">2023 – 2024</span>
+      <h3>Intermediate (BiPC)</h3>
+      <p>Sri Sai Junior College, Tanuku</p>
+      <b class="hl">81.4%</b>
+    </article>
+    <article class="card">
+      <span class="tag">2022</span>
+      <h3>SSC</h3>
+      <p>Z.P.P.H EM High School, Tanuku</p>
+      <b class="hl">55.8%</b>
+    </article>
+  </div>
+</section>
+
+<section id="skills" class="sec reveal">
+  <h2><small>02</small> Skills</h2>
+  <div class="skills">
+    <div class="card"><h3>Languages</h3><div class="pills"><span>Java</span><span>Python</span><span>SQL</span></div></div>
+    <div class="card"><h3>Fundamentals</h3><div class="pills"><span>DBMS</span><span>Data Structures &amp; Algorithms (basics)</span></div></div>
+    <div class="card"><h3>Web &amp; APIs</h3><div class="pills"><span>HTML</span><span>CSS</span><span>REST APIs</span><span>Flask (basics)</span></div></div>
+    <div class="card"><h3>Tools</h3><div class="pills"><span>Git</span><span>GitHub</span><span>VS Code</span></div></div>
+  </div>
+</section>
+
+<section id="projects" class="sec reveal">
+  <h2><small>03</small> Projects</h2>
+  <div class="projects">
+    <article class="card project">
+      <div class="p-top"><span class="p-ico">🤖</span><span class="tag">AI · Web App</span></div>
+      <h3>AI Resume Builder</h3>
+      <p>Generates resumes from 3 styled templates with one-click PDF download. Uses the Groq API (LLaMA) for an ATS score checker and a job-description match feature.</p>
+      <ul>
+        <li>Deployed on Render with a GitHub CI/CD pipeline</li>
+        <li>Client-side PDF export with html2pdf.js</li>
+      </ul>
+      <div class="pills sm"><span>React.js</span><span>Vite</span><span>Groq API</span><span>LLaMA</span><span>html2pdf.js</span></div>
+      <div class="p-links"><a class="btn primary sm" href="https://ai-resume-builder-9v2n.onrender.com/" target="_blank" rel="noopener">View ↗</a><a class="btn ghost sm" href="https://github.com/Vijaytejabandi/Ai-Resume-Builder" target="_blank" rel="noopener">GitHub ↗</a></div>
+    </article>
+    <article class="card project">
+      <div class="p-top"><span class="p-ico">🩺</span><span class="tag">Full-Stack · Web App</span></div>
+      <h3>Prescripto</h3>
+      <p>Doctor appointment booking platform where patients browse doctors and book appointments online.</p>
+      <ul>
+        <li>Front end and back end communicate through REST APIs</li>
+        <li>Patient-friendly doctor browsing and booking flow</li>
+      </ul>
+      <div class="pills sm"><span>Web App</span><span>REST API</span><span>Appointments</span></div>
+      <div class="p-links"><a class="btn primary sm" href="https://prescripto-frontend-two-flax.vercel.app/" target="_blank" rel="noopener">View ↗</a><a class="btn ghost sm" href="https://github.com/Vijaytejabandi" target="_blank" rel="noopener">GitHub ↗</a></div>
+    </article>
+  </div>
+</section>
+
+<section id="experience" class="sec reveal">
+  <h2><small>04</small> Experience &amp; Activities</h2>
+  <div class="timeline">
+    <article class="t-item">
+      <span class="tag">Sept 2025 – Oct 2025</span>
+      <h3>Web Development Intern</h3>
+      <h4>Pursuit Future Technologies</h4>
+      <ul>
+        <li>Built responsive web pages using HTML5, CSS3, Flexbox, Grid and media queries.</li>
+        <li>Wrote semantic, clean and maintainable HTML markup.</li>
+        <li>Awarded the Certificate of Internship Completion, Certificate of Excellence and Course Completion Certificate (ID: PFC1126).</li>
+      </ul>
+    </article>
+    <article class="t-item">
+      <span class="tag">Leadership</span>
+      <h3>Coordinator, BCA Coding Club</h3>
+      <h4>B.V. Raju College</h4>
+      <ul>
+        <li>Event Coordinator for the CODEQUEST programming event.</li>
+        <li>Event Coordinator for the OMNISOLVE event.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="certificates" class="sec reveal">
+  <h2><small>05</small> Certificates</h2>
+  <p class="sub">7 certifications — click any certificate to view it full size.</p>
+  <div class="certs">
+    <button class="cert" data-img="assets/certs/java-intellipaat.png" data-title="Java Programming — Intellipaat Academy">
+      <img src="assets/certs/java-intellipaat.png" alt="Java certificate from Intellipaat Academy" loading="lazy">
+      <div><h3>Java Programming</h3><p>Intellipaat Academy · Jan 30, 2026</p></div>
+    </button>
+    <button class="cert" data-img="assets/certs/python-saylor.png" data-title="CS105: Introduction to Python — Saylor Academy">
+      <img src="assets/certs/python-saylor.png" alt="Python certificate from Saylor Academy" loading="lazy" class="top">
+      <div><h3>Introduction to Python</h3><p>Saylor Academy · Jan 30, 2026 · Grade 93.68%</p></div>
+    </button>
+    <button class="cert" data-img="assets/certs/sql-ibm.png" data-title="SQL and Relational Databases 101 — IBM / Cognitive Class">
+      <img src="assets/certs/sql-ibm.png" alt="SQL certificate from IBM Cognitive Class" loading="lazy">
+      <div><h3>SQL &amp; Relational Databases 101</h3><p>IBM Cognitive Class · Jan 28, 2026</p></div>
+    </button>
+  </div>
+  <div class="certs certs2">
+    <button class="cert" data-img="assets/certs/pursuit-internship.png" data-title="Certificate of Internship Completion — Pursuit Future Technologies">
+      <img src="assets/certs/pursuit-internship.png" alt="Internship completion certificate from Pursuit Future Technologies" loading="lazy">
+      <div><h3>Web Development Internship</h3><p>Pursuit Future Technologies · Sept–Oct 2025 · ID: PFC1126</p></div>
+    </button>
+    <button class="cert" data-img="assets/certs/pursuit-excellence.png" data-title="Performance of Excellence — Pursuit Future Technologies">
+      <img src="assets/certs/pursuit-excellence.png" alt="Certificate of Excellence from Pursuit Future Technologies" loading="lazy">
+      <div><h3>Certificate of Excellence</h3><p>Pursuit Future Technologies · ID: PFC1126</p></div>
+    </button>
+    <button class="cert" data-img="assets/certs/pursuit-course.png" data-title="Web Development Course Completion — Pursuit Future Technologies">
+      <img src="assets/certs/pursuit-course.png" alt="Web development course completion certificate" loading="lazy">
+      <div><h3>Web Development Course</h3><p>Pursuit Future Technologies · 2-month course · ID: PFC1126</p></div>
+    </button>
+  </div>
+  <div class="certs certs3">
+    <div class="cert static">
+      <div class="badge">🔐</div>
+      <div><h3>Introduction to Cryptography &amp; Network Security</h3><p>Saylor Academy</p><span class="tag">Completed</span></div>
+    </div>
+  </div>
+  </section>
+
+<section id="contact" class="sec reveal">
+  <h2><small>06</small> Get In Touch</h2>
+  <div class="contact card">
+    <p>I'm open to entry-level software and IT roles. Let's talk!</p>
+    <div class="c-links">
+      <a href="mailto:bandivijayteja@gmail.com">✉ bandivijayteja@gmail.com</a>
+      <a href="https://github.com/Vijaytejabandi" target="_blank" rel="noopener">⌥ github.com/Vijaytejabandi</a>
+      <a href="https://www.linkedin.com/in/vijay-teja-bandi-741302433" target="_blank" rel="noopener">in linkedin.com/in/vijay-teja-bandi</a>
+      <a href="tel:+917075432977">☎ +91 70754 32977</a>
+      <span>📍 Tanuku, Andhra Pradesh, India</span>
+    </div>
+    <a class="btn primary" href="mailto:bandivijayteja@gmail.com">Send an Email</a>
+  </div>
+  <p class="langs">Languages: English · Telugu · German (A1)</p>
+</section>
+</main>
+
+<footer>
+  <div class="social"><a href="https://www.linkedin.com/in/vijay-teja-bandi-741302433" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/Vijaytejabandi" target="_blank" rel="noopener">GitHub</a><a href="mailto:bandivijayteja@gmail.com">Email</a></div>© <span id="yr"></span> Bandi Vijay Teja. Built with HTML, CSS &amp; JavaScript.</footer>
+
+<div class="lightbox" id="lb" hidden>
+  <button class="close" id="lbClose" aria-label="Close">×</button>
+  <img id="lbImg" alt="">
+  <p id="lbCap"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
